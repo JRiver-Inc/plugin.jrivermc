@@ -266,7 +266,11 @@ def playFile(key, replace):
         return
 
     files = [file]
-    playlist = queueFiles(files, replace)
+    result = queueFiles(files, replace)
+    if not result:
+        return
+
+    playlist = result["playlist"]
     if playlist and replace:
         xbmc.Player().play(playlist)
 
@@ -277,6 +281,9 @@ def playFiles(parent_id, index, replace):
         return
     
     result = queueFiles(files, replace, index)
+    if not result:
+        return
+    
     playlist = result["playlist"]
     start_index = result["startIndex"]
     if playlist:
