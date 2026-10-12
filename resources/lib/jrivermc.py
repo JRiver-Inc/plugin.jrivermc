@@ -120,7 +120,7 @@ def listFiles(parent_id, parent_name):
     n = 0
     for file in files:
         # Create a list item with a text label
-        list_item = getListItem(file, content_type)
+        list_item = getListItem(file, getContentType(file))
 
         # Custom context menu items        
         play_single = get_url(action="play_file", key=file["Key"], replace="1")
