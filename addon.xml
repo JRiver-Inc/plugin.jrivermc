@@ -15,10 +15,9 @@ provider-name="JRiver">
   <disclaimer lang="en_GB"></disclaimer>
   <license>GPL-3.0-or-later</license>
   <assets>
-    <icon>resources/images/icon.png</icon>
+    <icon>resources/images/icon.jpg</icon>
     <screenshot>resources/images/screenshot-1.jpg</screenshot>
     <screenshot>resources/images/screenshot-2.jpg</screenshot>
   </assets>
-  <news></news>
 </extension>
 </addon>
